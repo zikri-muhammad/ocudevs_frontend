@@ -25,10 +25,10 @@ export default function Navbar() {
       document.documentElement.scrollTop > 50
     ) {
       document.getElementById("navbarId").className =
-        "bg-white px-6 py-6 lg:px-8 sticky top-0 bg-indigo-600 bg-opacity-40 transition-all duration-300";
+        "bg-white px-6 py-6 lg:px-8 sticky top-0 bg-indigo-600 bg-opacity-40 transition-all duration-300 z-10";
     } else {
       document.getElementById("navbarId").className =
-        "px-6 py-6 lg:px-8 sticky top-0 transition-all duration-300";
+        "px-6 py-6 lg:px-8 sticky top-0 transition-all duration-300 z-10";
     }
   }
 
