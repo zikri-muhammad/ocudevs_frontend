@@ -8,7 +8,7 @@ export async function getServerSideProps() {
   
   return {
     props: {
-      profile : await getFirstProfile(),
+      profile : await getFirstProfile() || null,
       images: await getPhotoProfile()
     }
   }

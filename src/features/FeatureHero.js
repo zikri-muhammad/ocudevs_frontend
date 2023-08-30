@@ -35,7 +35,7 @@ export default function FeatureHero({ profile, images }) {
 
     return (
         <section className="container mx-auto px-16 md:px-8">
-            <div className="w-full flex items-center h-[calc(100vh-8rem)]">
+            <div className="w-full flex items-center h-[calc(100vh-6rem)]">
                 <div className="flex justify-around w-full space-x-8">
                     <div className="flex flex-col justify-center px-8 font-poppins">
                         <div className="text-6xl flex flex-col space-y-2 font-poppins-bold max-w-2xl">
