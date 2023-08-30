@@ -1,8 +1,11 @@
 import { getAllTechStack } from "@/collection/techStackCollection"
+import ButtonSolid from "@/components/Button/Solid"
+import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 
 export default function FeatureTechStack() {
 
+    const router = useRouter()
     const [techStack, setTechStack] = useState([])
 
     useEffect(() => {
@@ -14,8 +17,12 @@ export default function FeatureTechStack() {
         setTechStack(getData)
     }
 
+    function handleNavigate() {
+        router.push("/tech-stack")
+    }
+
     return (
-        <section className="min-h-screen w-full bg-gray-50 py-16">
+        <section className="w-full bg-gray-50 py-16">
             <div className="container mx-auto space-y-4">
                 <div className="text-5xl font-poppins-semi-bold text-gray-700 text-center">
                     My Tech Stack
@@ -34,7 +41,9 @@ export default function FeatureTechStack() {
                         }
                     </div>
                 </div>
-
+                <div className="flex justify-center">
+                    <ButtonSolid className="!px-8" click={handleNavigate} text="See More" />
+                </div>
             </div>
         </section>
     )

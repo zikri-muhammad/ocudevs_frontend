@@ -1,5 +1,6 @@
 import { getFirstProfile } from "@/collection/profileCollection";
 import FeatureHero from "@/features/FeatureHero";
+import FeatureProject from "@/features/FeatureProject";
 import FeatureTechStack from "@/features/FeatureTechStack";
 import LandingLayout from "@/layouts/LandingLayout";
 import { getPhotoProfile } from "@/storage/profileStorage";
@@ -19,6 +20,7 @@ export default function Home({ profile, images }) {
     <LandingLayout>
       <FeatureHero profile={profile} images={images} />
       <FeatureTechStack />
+      <FeatureProject />
     </LandingLayout>
   )
 }
