@@ -1,5 +1,4 @@
 import { getAllTechStack } from "@/collection/techStackCollection"
-import { getImageTechStack } from "@/storage/techStackStorage"
 import { useEffect, useState } from "react"
 
 export default function FeatureTechStack() {
@@ -9,11 +8,7 @@ export default function FeatureTechStack() {
     useEffect(() => {
         getTechStack()
     }, [])
-
-    useEffect(() => {
-        console.log(techStack);
-    }, [techStack])
-
+    
     async function getTechStack() {
         const getData = await getAllTechStack()
         setTechStack(getData)
