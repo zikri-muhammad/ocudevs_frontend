@@ -25,6 +25,9 @@ export default function FeatureProject() {
                         <CardProject />
                         <CardProject />
                         <CardProject />
+                        <CardProject />
+                        <CardProject />
+                        <CardProject />
                     </div>
                 </div>
                 <div className="flex justify-center">
