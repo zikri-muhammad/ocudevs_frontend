@@ -19,7 +19,7 @@ async function getAllTechStack() {
 
         return {
             ...item,
-            source: image
+            source: image,
         }
     })
 

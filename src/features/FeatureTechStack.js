@@ -24,10 +24,10 @@ export default function FeatureTechStack() {
     return (
         <section className="w-full bg-gray-50 py-16">
             <div className="container mx-auto space-y-4">
-                <div className="text-5xl font-poppins-semi-bold text-gray-700 text-center">
+                <div className="text-5xl font-poppins-semi-bold text-gray-600 text-center">
                     My Tech Stack
                 </div>
-                <div className="text-gray-700 text-2xl font-poppins-extra-light text-center">
+                <div className="text-gray-600 text-2xl font-poppins-extra-light text-center">
                     Technologies I’ve been working with recently
                 </div>
                 <div className="my-24 w-full md:px-16 flex justify-center">

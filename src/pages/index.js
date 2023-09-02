@@ -1,4 +1,5 @@
 import { getFirstProfile } from "@/collection/profileCollection";
+import FeatureCounter from "@/features/FeatureCounter";
 import FeatureHero from "@/features/FeatureHero";
 import FeatureProject from "@/features/FeatureProject";
 import FeatureTechStack from "@/features/FeatureTechStack";

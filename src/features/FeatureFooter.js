@@ -51,12 +51,16 @@ export default function FeatureFooter() {
         }
     ]
 
+    function year() {
+        return new Date().getFullYear()
+    }
+
     return (
         <footer className="w-full bg-gray-100 font-poppins">
             <div className="container mx-auto space-y-2 py-6 px-8 md:px-16">
                 <div className="w-full flex justify-between items-center">
                     <div className="w-full text-sm">
-                        🅒 2023 All right reserved.
+                        🅒 {year()} All right reserved.
                     </div>
                     <div className="flex items-center space-x-3">
                         {
@@ -72,11 +76,11 @@ export default function FeatureFooter() {
                     <div className="flex text-sm space-x-4 items-center">
                         {
                             menu.map((item, i) => (
-                                <Link className="bg-clip-text text-gray-700 bg-gradient-to-r from-primary to-secondary hover:text-transparent transition-all" href={item.link} key={i}>{item.name}</Link>
+                                <Link className="bg-clip-text text-gray-600 bg-gradient-to-r from-primary to-secondary hover:text-transparent transition-all" href={item.link} key={i}>{item.name}</Link>
                             ))
                         }
                     </div>
-                    <div className="text-gray-700 text-sm">
+                    <div className="text-gray-600 text-sm">
                         Designed and built by Choirul Affan with Hot Tea & Fried Tempe 🤤
                     </div>
                 </div>

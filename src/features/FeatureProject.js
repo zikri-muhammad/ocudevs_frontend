@@ -1,6 +1,5 @@
 import ButtonSolid from "@/components/Button/Solid";
 import CardProject from "@/components/Card/Project";
-import Image from "next/image";
 import { useRouter } from "next/router";
 
 export default function FeatureProject() {
@@ -14,10 +13,10 @@ export default function FeatureProject() {
     return (
         <section className="w-full bg-white py-16">
             <div className="container mx-auto space-y-4">
-                <div className="text-5xl font-poppins-semi-bold text-gray-700 text-center">
+                <div className="text-5xl font-poppins-semi-bold text-gray-600 text-center">
                     Projects
                 </div>
-                <div className="text-gray-700 text-2xl font-poppins-extra-light text-center">
+                <div className="text-gray-600 text-2xl font-poppins-extra-light text-center">
                     Things I’ve built so far
                 </div>
                 <div className="my-24 w-full px-8 md:px-16 flex justify-center font-poppins">

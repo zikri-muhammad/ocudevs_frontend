@@ -56,7 +56,7 @@ export default function FeatureNavbar() {
                 <div className="flex space-x-8 items-center">
                     {
                         menu.map((item, i) => (
-                            <Link className="bg-clip-text text-gray-700 bg-gradient-to-r from-primary to-secondary hover:text-transparent transition-all" key={i} href={item.link} >
+                            <Link className="bg-clip-text text-gray-600 bg-gradient-to-r from-primary to-secondary hover:text-transparent transition-all" key={i} href={item.link} >
                                 {item.name}
                             </Link>
                         ))
