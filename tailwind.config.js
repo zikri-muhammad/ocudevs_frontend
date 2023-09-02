@@ -138,7 +138,8 @@ module.exports = {
         DEFAULT: "#0C356A",
       },
       secondary: {
-        DEFAULT: "#279EFF"
+        DEFAULT: "#279EFF",
+        dark: "#2187DE"
       },
       inherit: colors.inherit,
       current: colors.current,
