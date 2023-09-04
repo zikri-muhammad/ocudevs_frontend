@@ -72,8 +72,8 @@ export default function FeatureFooter() {
                         }
                     </div>
                 </div>
-                <div className="pt-2 border-t border-gray-800 w-full flex justify-between">
-                    <div className="flex text-sm space-x-4 items-center">
+                <div className="pt-2 border-t border-gray-800 w-full flex flex-col space-y-2 md:space-y-0 md:flex-row md:justify-between">
+                    <div className="flex w-full md:w-auto justify-between md:justify-start text-sm md:space-x-4 items-center">
                         {
                             menu.map((item, i) => (
                                 <Link className="bg-clip-text text-gray-600 bg-gradient-to-r from-primary to-secondary hover:text-transparent transition-all" href={item.link} key={i}>{item.name}</Link>

@@ -16,6 +16,9 @@ async function getAllTechStack() {
 
     const withImage = techStack.map(async (item) => {
         const image = await getImageTechStack(item.image)
+        if (!image) return {
+            ...item
+        }
 
         return {
             ...item,

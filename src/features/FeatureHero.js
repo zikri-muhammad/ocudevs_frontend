@@ -34,17 +34,17 @@ export default function FeatureHero({ profile, images }) {
     }, [])
 
     return (
-        <section className="container mx-auto px-16 md:px-8">
-            <div className="w-full flex items-center h-[calc(100vh-6rem)]">
-                <div className="flex justify-around w-full space-x-8">
-                    <div className="flex flex-col justify-center px-8 font-poppins">
-                        <div className="text-6xl flex flex-col space-y-2 font-poppins-bold max-w-2xl">
+        <section className="container mx-auto px-8 md:px-16">
+            <div className="w-full flex md:items-center h-[calc(100vh-8rem)] md:h-[calc(100vh-6rem)]">
+                <div className="flex flex-col-reverse md:flex-row justify-end pt-[8vh] md:pt-0 md:justify-around w-full md:space-x-8">
+                    <div className="flex flex-col justify-center md:px-8 font-poppins">
+                        <div className="text-3xl md:text-6xl flex flex-col space-y-2 font-poppins-bold max-w-2xl">
                             <div>Hi 👋 </div>
                             <div>My name is</div>
                             <div className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
                                 {profile?.name}
                             </div>
-                            <div className="flex space-x-4 whitespace-nowrap max-w-xl">
+                            <div className="flex space-x-2 md:space-x-4 whitespace-nowrap max-w-xl">
                                 <span>I build things for</span>
                                 <span className="w-36">
                                     <AnimatePresence>
@@ -75,8 +75,8 @@ export default function FeatureHero({ profile, images }) {
                             </div>
                         </div>
                     </div>
-                    <div className="p-16">
-                        <img alt="Choirul Affan Adi Putra" src={images} className="aspect-square w-[24rem] object-contain" />
+                    <div className="p-4 flex justify-center md:p-16">
+                        <img alt="Choirul Affan Adi Putra" src={images} className="aspect-square w-[16rem] md:w-[24rem] object-contain" />
                     </div>
                 </div>
             </div>
