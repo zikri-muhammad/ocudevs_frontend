@@ -16,7 +16,7 @@ export async function getServerSideProps() {
   }
 }
 
-export default function Home({ profile, images }) {
+export default function HomePage({ profile, images }) {
   return (
     <LandingLayout>
       <FeatureHero profile={profile} images={images} />
