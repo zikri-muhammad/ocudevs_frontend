@@ -1,7 +1,9 @@
 import BaseNavbar from "@/components/Base/Navbar";
+import { AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import FeatureMenuMobile from "./FeatureMenuMobile";
 
 export default function FeatureNavbar() {
 
@@ -41,8 +43,10 @@ export default function FeatureNavbar() {
 
     return (
         <BaseNavbar>
-            <div className="w-full flex justify-between items-center font-poppins">
-                <Image src={require("@/assets/icons/logo.svg")} alt="af2.tech" />
+            <div className="w-full flex justify-between items-center font-poppins px-8 lg:px-16">
+                <Link href="/">
+                    <Image src={require("@/assets/icons/logo.svg")} alt="af2.tech" />
+                </Link>
                 <div className="hidden md:flex space-x-8 items-center">
                     {
                         menu.map((item, i) => (
@@ -70,8 +74,12 @@ export default function FeatureNavbar() {
                         }
                     </div>
                 </div>
-
             </div>
+            <AnimatePresence>
+                {
+                    toggle && <FeatureMenuMobile clicked={() => setToggle(false)} menu={menu} />
+                }
+            </AnimatePresence>
         </BaseNavbar>
     )
 }
