@@ -9,6 +9,17 @@ async function getAllPortofolio() {
     return portofolio
 }
 
+async function addPortofolio(raw) {
+    return new Promise((resolve, reject) => {
+        addDoc(portofolioRef, raw).then((data) => {
+            resolve(data)
+        }).catch((error) => {
+            reject(error)
+        })
+    })
+}
+
 export {
+    addPortofolio,
     getAllPortofolio
 }

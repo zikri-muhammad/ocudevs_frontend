@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function CardProject({ title, subtitle, livePreview, previewCode }) {
+export default function CardProject({ title, subtitle, livePreview, previewCode, click }) {
 
     function goToLivePreview() {
         if (!livePreview) return
@@ -13,7 +13,7 @@ export default function CardProject({ title, subtitle, livePreview, previewCode 
     }
 
     return (
-        <div className="bg-white transition-all hover:opacity-70 cursor-pointer overflow-hidden rounded-xl drop-shadow-2xl h-[26rem] w-full">
+        <div onClick={click} className="bg-white transition-all hover:opacity-70 cursor-pointer overflow-hidden rounded-xl drop-shadow-2xl h-[26rem] w-full">
             <div className="w-full bg-gray-100 h-[12rem]"></div>
             <div className="w-full p-4 space-y-3">
                 <div className="w-full text-xl h-[3.5rem] font-semibold line-clamp-2">

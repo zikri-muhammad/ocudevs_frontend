@@ -141,6 +141,10 @@ module.exports = {
         DEFAULT: "#279EFF",
         dark: "#2187DE"
       },
+      success: {
+        light: "#D7FFE0",
+        DEFAULT: "#018C0F",
+      },
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
