@@ -1,5 +1,5 @@
-import { getFirstAbout } from "@/collection/aboutCollection";
 import { getAllEducation } from "@/collection/educationCollection";
+import { getFirstProfile } from "@/collection/profileCollection";
 import { getAllWorkExperiences } from "@/collection/workExperienceCollection";
 import FeatureAboutMe from "@/features/FeatureAboutMe";
 import FeatureEducation from "@/features/FeatureEducation";
@@ -9,7 +9,7 @@ import LandingLayout from "@/layouts/LandingLayout";
 export async function getServerSideProps() {
     return {
         props: {
-            about: await getFirstAbout(),
+            about: await getFirstProfile(),
             experiences: await getAllWorkExperiences(),
             education: await getAllEducation()
         }
