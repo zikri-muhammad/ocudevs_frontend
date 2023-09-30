@@ -22,7 +22,7 @@ export default function FeatureProject() {
     }
 
     function handleNavigate() {
-        router.push("/projects")
+        router.push("/project")
     }
 
     function handleDetailProject(item) {
