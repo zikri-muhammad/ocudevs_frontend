@@ -14,7 +14,7 @@ export default function ItemWorkExperiences({ title, company, typeWorking, start
             </div>
             <div className="flex flex-col md:flex-row justify-between md:items-center">
                 <div className="flex items-center justify-between md:space-x-8">
-                    <div className="flex items-center space-x-1">
+                    <div className="flex items-start md:items-center space-x-1">
                         <div className="h-6 w-6">
                             <Image alt="company" src={require("@/assets/icons/company.svg")} className="w-full h-full object-contain" />
                         </div>
