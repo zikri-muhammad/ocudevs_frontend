@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function ItemWorkExperiences({ title, company, typeWorking, startDate, endDate, location }) {
+export default function ItemWorkExperiences({ title, company, typeWorking, startDate, endDate, location, responsibilities }) {
 
     return (
         <div className="w-full border-b-2 pb-4 pt-2 space-y-2">
@@ -18,7 +18,7 @@ export default function ItemWorkExperiences({ title, company, typeWorking, start
                         <div className="h-6 w-6">
                             <Image alt="company" src={require("@/assets/icons/company.svg")} className="w-full h-full object-contain" />
                         </div>
-                        <div className="text-xs text-gray-500">
+                        <div className="text-sm text-gray-500">
                             {company}
                         </div>
                     </div>
@@ -26,7 +26,7 @@ export default function ItemWorkExperiences({ title, company, typeWorking, start
                         <div className="h-6 w-6">
                             <Image alt="location" src={require("@/assets/icons/location.svg")} className="w-full h-full object-contain" />
                         </div>
-                        <div className="text-xs text-gray-500">
+                        <div className="text-sm text-gray-500">
                             {location}
                         </div>
                     </div>
@@ -35,11 +35,29 @@ export default function ItemWorkExperiences({ title, company, typeWorking, start
                     <div className="h-6 w-6">
                         <Image alt="date" src={require("@/assets/icons/date.svg")} className="w-full h-full" />
                     </div>
-                    <div className="text-gray-500 text-xs">
+                    <div className="text-gray-500 text-sm">
                         {startDate} - {endDate}
                     </div>
                 </div>
             </div>
+            {
+                responsibilities && responsibilities.length > 0 && (
+                    <>
+                        <div className="px-1 text-gray-500 font-semibold text-sm">
+                            Responsibilities :
+                        </div>
+                        <ul className="list-disc px-5 text-gray-500 text-sm">
+                            {
+                                responsibilities.map((item, i) => (
+                                    <li key={i}>
+                                        {item}
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </>
+                )
+            }
         </div>
     )
 }

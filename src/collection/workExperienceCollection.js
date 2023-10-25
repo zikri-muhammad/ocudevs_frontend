@@ -1,10 +1,10 @@
 import { db } from "@/library/firebase"
-import { collection, getDocs } from "firebase/firestore"
+import { collection, getDocs, orderBy, query } from "firebase/firestore"
 
 const workExperiencesRef = collection(db, "work-experiences")
 
 async function getAllWorkExperiences() {
-    const querySnapshot = await getDocs(workExperiencesRef)
+    const querySnapshot = await getDocs(query(workExperiencesRef, orderBy("order")))
     const workExperiences = querySnapshot.docs.map((doc) => (doc.data() && ({ id: doc.id, ...doc.data() })))
     return workExperiences
 }
