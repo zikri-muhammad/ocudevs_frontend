@@ -11,14 +11,14 @@ export default function FeatureDetailProject({ close, item }) {
     return (
         <>
             <ModalReguler close={close}>
-                <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 overflow-y-scroll font-poppins">
+                <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 overflow-y-scroll scrollbar-none font-poppins">
                     <div className="w-full space-y-4">
                         <div className="w-full h-[12rem] md:h-[18rem] bg-gray-50 rounded-lg relative">
                             <div className="absolute right-4 top-4">
                                 <ChipText text="Gallery" />
                             </div>
                         </div>
-                        <div className="w-full h-[4rem] md:h-[5rem] bg-gray-50 rounded-lg">
+                        <div className="w-full h-[4rem] md:h-[4rem] bg-gray-50 rounded-lg">
                         
                         </div>
                     </div>

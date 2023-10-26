@@ -41,7 +41,7 @@ export default function ModalReguler({ close, children, className }) {
                     scale: 0.5,
                 }}
                 className={`shadow-xl flex flex-col rounded-xl mx-2 md:mx-0 bg-white w-full md:w-[70%] container h-full md:h-auto max-h-[80vh] mt-[4rem] overflow-hidden ${className}`}>
-                <div className="flex items-center px-5 justify-between bg-gradient-to-r from-primary to-secondary w-full py-2">
+                <div className="flex items-center px-4 md:px-5 justify-between bg-gradient-to-r from-primary to-secondary w-full py-2">
                     <div className="text-white pl-1 text-lg font-semibold">
                         Project Detail
                     </div>
@@ -49,7 +49,7 @@ export default function ModalReguler({ close, children, className }) {
                         <Image alt="times" src={require("@/assets/icons/times_white.svg")} className="w-full h-full" />
                     </div>
                 </div>
-                <div className="w-full max-h-[70vh] p-2 md:px-6 md:py-6 space-y-4 overflow-y-auto scrollbar-thin scrollbar-thumb-info scrollbar-track-secondary">
+                <div className="w-full max-h-[70vh] scrollbar-none p-3 md:px-6 md:py-6 space-y-4 overflow-y-auto scrollbar-thin scrollbar-thumb-info scrollbar-track-secondary">
                     {children}
                 </div>
             </motion.div>
