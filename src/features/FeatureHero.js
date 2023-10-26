@@ -38,7 +38,7 @@ export default function FeatureHero({ profile, images }) {
             <div className="w-full flex md:items-center h-[calc(100vh-8rem)] md:h-[calc(100vh-6rem)]">
                 <div className="flex flex-col-reverse md:flex-row justify-end pt-[8vh] md:pt-0 md:justify-around w-full md:space-x-8">
                     <div className="flex flex-col justify-center md:px-8 font-poppins">
-                        <div className="text-3xl md:text-6xl flex flex-col space-y-2 font-poppins-bold max-w-2xl">
+                        <div className="text-3xl md:text-4xl lg:text-6xl flex flex-col space-y-2 font-poppins-bold max-w-2xl">
                             <div>Hi 👋 </div>
                             <div>My name is</div>
                             <div className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
@@ -75,8 +75,8 @@ export default function FeatureHero({ profile, images }) {
                             </div>
                         </div>
                     </div>
-                    <div className="p-4 flex justify-center md:p-16">
-                        <img alt="Choirul Affan Adi Putra" src={images} className="aspect-square w-[16rem] md:w-[24rem] object-contain" />
+                    <div className="p-4 flex justify-center lg:p-16">
+                        <img alt="Choirul Affan Adi Putra" src={images} className="aspect-square max-w-none w-[16rem] xl:w-[24rem] object-contain" />
                     </div>
                 </div>
             </div>
