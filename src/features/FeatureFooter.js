@@ -31,23 +31,23 @@ export default function FeatureFooter() {
             id: '412321jdsjs-23232j',
             name: 'Github',
             icon: 'github.svg',
-            link: 'https://github.com/caffanap'
+            link: 'https://github.com/zikri-muhammad'
         },
         {
             id: '412321jdsjs-23232j',
             name: 'Gitlab',
             icon: 'gitlab.svg',
-            link: 'https://gitlab.com/caffanap'
+            link: 'https://gitlab.com/zikri-muhammad'
         },
         {
             name: 'Linkedin',
             icon: 'linkedin.svg',
-            link: 'https://www.linkedin.com/in/caffanap'
+            link: 'https://www.linkedin.com/in/muhammad-zikri17'
         },
         {
             name: 'Facebook',
             icon: 'facebook.svg',
-            link: 'https://www.facebook.com/chairulaffan.adiputra'
+            link: 'https://www.facebook.com/muhammad-zikri17'
         }
     ]
 

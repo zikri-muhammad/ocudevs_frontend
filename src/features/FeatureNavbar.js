@@ -37,7 +37,7 @@ export default function FeatureNavbar() {
             id: '412321jdsjs-23232j',
             name: 'Github',
             icon: 'github.svg',
-            link: 'https://github.com/caffanap'
+            link: 'https://github.com/zikri-muhammad'
         }
     ]
 
